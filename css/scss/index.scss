@@ -1,0 +1,42 @@
+@import "globals";
+@import "navbar";
+
+// hero section
+.heroSection {
+    min-height: 90.5vh;
+    @include gridCenter;
+
+    &__innerContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 0 2rem;
+
+        .heroSection__textContainer {
+            flex: 0.6;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: stretch;
+            gap: 22px 0;
+
+            .heroSection__heroHeading {
+                font-weight: 800;
+                font-size: 4rem;
+            }
+        }
+
+        .heroSection__imgContainer {
+            flex: 0.4;
+            display: flex;
+            justify-content: flex-end;
+            align-items: stretch;
+
+            .heroSection__heroImg {
+                width: 500px;
+                aspect-ratio: 1/1;
+                filter: drop-shadow(-10px 14px 6px rgba(0, 0, 0, 0.26));
+            }
+        }
+    }
+}

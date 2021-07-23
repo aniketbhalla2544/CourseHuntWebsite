@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: whitesmoke;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+p {
+  line-height: 1.8;
+  color: #5c5c5c;
+}
+
+a:link,
+a:visited {
+  color: #242424;
+}
+
+.buttonBaseStyle {
+  padding: 0.8rem 1rem;
+  background-color: #e03616;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  text-align: center;
+  letter-spacing: 4px;
+  font-weight: 600;
+  color: white;
+  transition: box-shadow 500ms ease 0s, font-size 500ms ease 0s;
+  box-shadow: -10px 10px 4px rgba(0, 0, 0, 0.212);
+}
+
+.buttonBaseStyle:hover {
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.43);
+  cursor: pointer;
+  font-size: 1rem;
+  color: whitesmoke;
+}
+
+.buttonBaseStyle:link, .buttonBaseStyle:visited {
+  color: whitesmoke;
+}
+
+.buttonBaseStyle::focus {
+  outline: none;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: whitesmoke;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+p {
+  line-height: 1.8;
+  color: #5c5c5c;
+}
+
+a:link,
+a:visited {
+  color: #242424;
+}
+
+.buttonBaseStyle {
+  padding: 0.8rem 1rem;
+  background-color: #e03616;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  text-align: center;
+  letter-spacing: 4px;
+  font-weight: 600;
+  color: white;
+  transition: box-shadow 500ms ease 0s, font-size 500ms ease 0s;
+  box-shadow: -10px 10px 4px rgba(0, 0, 0, 0.212);
+}
+
+.buttonBaseStyle:hover {
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.43);
+  cursor: pointer;
+  font-size: 1rem;
+  color: whitesmoke;
+}
+
+.buttonBaseStyle:link, .buttonBaseStyle:visited {
+  color: whitesmoke;
+}
+
+.buttonBaseStyle::focus {
+  outline: none;
+}
+
+.navbar__container {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.267);
+  z-index: 1000;
+  background-color: whitesmoke;
+}
+
+.navbar__container .navbar__logo {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.navbar__container .navbar__logo span:nth-of-type(2) {
+  color: #e03616;
+}
+
+.navbar__container .navbar__navLink {
+  font-size: 1rem;
+  transition: font-size 200ms linear 0s;
+}
+
+.navbar__container .navbar__navLink:hover {
+  color: #e03616;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.searchSec {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  background-color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.searchSec .searchSec__form {
+  flex: 0.8;
+  display: flex;
+  align-items: center;
+  gap: 0 2rem;
+  flex-flow: row nowrap;
+}
+
+.searchSec .searchSec__form .searchSec__input {
+  flex: 0.8;
+  background-color: transparent;
+  border: none;
+  padding-top: 1.4rem;
+  padding-bottom: 1rem;
+}
+
+.searchSec .searchSec__form .searchSec__input:focus {
+  outline: none;
+}
+
+.searchSec .searchSec__form .searchSec__submitBtn {
+  flex: 0.2 0;
+  padding: 0.6rem 0;
+  background-color: #e03616;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  white-space: nowrap;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: white;
+  transition: box-shadow 500ms ease 0s, font-size 500ms ease 0s;
+}
+
+.searchSec .searchSec__form .searchSec__submitBtn:link, .searchSec .searchSec__form .searchSec__submitBtn:visited {
+  color: whitesmoke;
+}
+
+.searchSec .searchSec__form .searchSec__submitBtn:hover {
+  cursor: pointer;
+  color: whitesmoke;
+  background-color: #5fad06;
+}
+
+#dataBlock {
+  padding: 5rem 4rem;
+  height: 400px;
+  overflow-y: scroll;
+  background-color: white;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+#dataBlock .result__li {
+  margin-bottom: 5rem;
+  display: flex;
+  align-items: stretch;
+  gap: 0 4rem;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.199);
+}
+
+#dataBlock .result__li .result__thumbnail {
+  flex: 0.4;
+}
+
+#dataBlock .result__li .result__righBody {
+  padding-top: 1.4rem;
+  flex: 0.6;
+}
+
+#dataBlock .result__li .result__righBody .result__videoTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+#dataBlock .result__li .result__righBody .result__channelTitle {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.315);
+  font-weight: 700;
+}
+
+#dataBlock .result__li .result__righBody .result__channelTitle::before {
+  content: "by  ";
+  font-size: 1rem;
+}
+
+#dataBlock .result__li .result__righBody .result__showVideoBtn {
+  box-shadow: none;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.425);
+  transition: box-shadow 500ms ease 0s, font-size 500ms ease 0s;
+}
+
+#dataBlock .result__li .result__righBody .result__showVideoBtn:hover {
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.43);
+  cursor: pointer;
+  font-size: 1rem;
+  color: whitesmoke;
+}
+
+.emptyBlock {
+  position: relative;
+  font-size: 1.8rem;
+  background: url("/CourseHuntWebsite/images/emptyRexn.svg") no-repeat center;
+  background-size: 550px 350px;
+}
+/*# sourceMappingURL=searchPage.css.map */

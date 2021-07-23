@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: whitesmoke;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+p {
+  line-height: 1.8;
+  color: #5c5c5c;
+}
+
+a:link,
+a:visited {
+  color: #242424;
+}
+
+.buttonBaseStyle {
+  padding: 0.8rem 1rem;
+  background-color: #e03616;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  text-align: center;
+  letter-spacing: 4px;
+  font-weight: 600;
+  color: white;
+  transition: box-shadow 500ms ease 0s, font-size 500ms ease 0s;
+  box-shadow: -10px 10px 4px rgba(0, 0, 0, 0.212);
+}
+
+.buttonBaseStyle:hover {
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.43);
+  cursor: pointer;
+  font-size: 1rem;
+  color: whitesmoke;
+}
+
+.buttonBaseStyle:link, .buttonBaseStyle:visited {
+  color: whitesmoke;
+}
+
+.buttonBaseStyle::focus {
+  outline: none;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: whitesmoke;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+p {
+  line-height: 1.8;
+  color: #5c5c5c;
+}
+
+a:link,
+a:visited {
+  color: #242424;
+}
+
+.buttonBaseStyle {
+  padding: 0.8rem 1rem;
+  background-color: #e03616;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  text-align: center;
+  letter-spacing: 4px;
+  font-weight: 600;
+  color: white;
+  transition: box-shadow 500ms ease 0s, font-size 500ms ease 0s;
+  box-shadow: -10px 10px 4px rgba(0, 0, 0, 0.212);
+}
+
+.buttonBaseStyle:hover {
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.43);
+  cursor: pointer;
+  font-size: 1rem;
+  color: whitesmoke;
+}
+
+.buttonBaseStyle:link, .buttonBaseStyle:visited {
+  color: whitesmoke;
+}
+
+.buttonBaseStyle::focus {
+  outline: none;
+}
+
+.navbar__container {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.267);
+  z-index: 1000;
+  background-color: whitesmoke;
+}
+
+.navbar__container .navbar__logo {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.navbar__container .navbar__logo span:nth-of-type(2) {
+  color: #e03616;
+}
+
+.navbar__container .navbar__navLink {
+  font-size: 1rem;
+  transition: font-size 200ms linear 0s;
+}
+
+.navbar__container .navbar__navLink:hover {
+  color: #e03616;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.heroSection {
+  min-height: 90.5vh;
+  display: grid;
+  place-items: center;
+}
+
+.heroSection__innerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0 2rem;
+}
+
+.heroSection__innerContainer .heroSection__textContainer {
+  flex: 0.6;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 22px 0;
+}
+
+.heroSection__innerContainer .heroSection__textContainer .heroSection__heroHeading {
+  font-weight: 800;
+  font-size: 4rem;
+}
+
+.heroSection__innerContainer .heroSection__imgContainer {
+  flex: 0.4;
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
+.heroSection__innerContainer .heroSection__imgContainer .heroSection__heroImg {
+  width: 500px;
+  aspect-ratio: 1/1;
+  filter: drop-shadow(-10px 14px 6px rgba(0, 0, 0, 0.26));
+}
+/*# sourceMappingURL=index.css.map */

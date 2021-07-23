@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+// colors
+$text-color: rgb(36, 36, 36);
+$text-lightColor: rgb(92, 92, 92);
+$theme-red: #e03616;
+$theme-green: #1c7c54;
+$theme-independence: #3a506b;
+$theme-morningBlue: #7c9885;
+
+// fonts
+$text-font: "Noto Sans JP", sans-serif;
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $text-font;
+    background-color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+p {
+    line-height: 1.8;
+    color: $text-lightColor;
+}
+
+a:link,
+a:visited {
+    color: $text-color;
+}
+
+// for links a
+.buttonBaseStyle {
+    padding: 0.8rem 1rem;
+    background-color: $theme-red;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: 600;
+    color: white;
+    transition: box-shadow 500ms ease 0s, font-size 500ms ease 0s;
+    box-shadow: -10px 10px 4px rgba(0, 0, 0, 0.212);
+
+    &:hover {
+        box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.43);
+        cursor: pointer;
+        font-size: 1rem;
+        color: whitesmoke;
+    }
+
+    &:link,
+    &:visited{
+        color: whitesmoke;
+    }
+
+    &::focus {
+        outline: none;
+    }
+}
+
+@mixin gridCenter {
+    display: grid;
+    place-items: center;
+}
+
+@mixin border($size, $color) {
+    border: $size solid $color;
+}

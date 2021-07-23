@@ -1,0 +1,136 @@
+@import "globals";
+@import "navbar";
+
+body {
+    min-height: 100vh;
+}
+
+// search section
+.searchSec {
+    margin: {
+        top: 4rem;
+        bottom: 4rem;
+    }
+    background-color: white;
+    padding: {
+        left: 2rem;
+        right: 2rem;
+    }
+
+    .searchSec__form {
+        flex: 0.8;
+        display: flex;
+        align-items: center;
+        gap: 0 2rem;
+        flex-flow: row nowrap;
+
+        .searchSec__input {
+            flex: 0.8;
+            background-color: transparent;
+            border: none;
+            padding: {
+                top: 1.4rem;
+                bottom: 1rem;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .searchSec__submitBtn {
+            flex: 0.2 0;
+            padding: 0.6rem 0;
+            background-color: $theme-red;
+            border: none;
+            outline: none;
+            font-size: 1rem;
+            white-space: nowrap;
+            text-align: center;
+            letter-spacing: 2px;
+            font-weight: 600;
+            color: white;
+            transition: box-shadow 500ms ease 0s, font-size 500ms ease 0s;
+
+            &:link,
+            &:visited {
+                color: whitesmoke;
+            }
+
+            &:hover {
+                cursor: pointer;
+                color: whitesmoke;
+                background-color: rgb(95, 173, 6);
+            }
+        }
+    }
+}
+
+#dataBlock {
+    padding: 5rem 4rem;
+    height: 400px;
+    overflow-y: scroll;
+    background-color: white;
+    position: relative;
+    margin-bottom: 4rem;
+
+    .result__li {
+        margin-bottom: 5rem;
+        display: flex;
+        align-items: stretch;
+        gap: 0 4rem;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.199);
+
+        // thumbnal
+        .result__thumbnail {
+            flex: 0.4;
+        }
+
+        .result__righBody {
+            padding-top: 1.4rem;
+            flex: 0.6;
+
+            .result__videoTitle {
+                font-size: 1.8rem;
+                font-weight: 700;
+                margin-bottom: 0.8rem;
+            }
+
+            .result__channelTitle {
+                font-size: 1.2rem;
+                margin-bottom: 3rem;
+                font-style: italic;
+                color: rgba(0, 0, 0, 0.315);
+                font-weight: 700;
+
+                &::before {
+                    content: "by  ";
+                    font-size: 1rem;
+                }
+            }
+
+            .result__showVideoBtn {
+                box-shadow: none;
+                font-size: 1rem;
+                padding: 1rem 2rem;
+                text-transform: uppercase;
+                box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.425);
+                transition: box-shadow 500ms ease 0s, font-size 500ms ease 0s;
+
+                &:hover {
+                    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.43);
+                    cursor: pointer;
+                    font-size: 1rem;
+                    color: whitesmoke;
+                }
+            }
+        }
+    }
+}
+
+.emptyBlock {
+    position: relative;
+    font-size: 1.8rem;
+    background: url("/CourseHuntWebsite/images/emptyRexn.svg") no-repeat center;
+    background-size: 550px 350px;
+}

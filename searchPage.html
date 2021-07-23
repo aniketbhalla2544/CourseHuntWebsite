@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Search Page</title>
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- my css  -->
+    <link rel="stylesheet" href="/CourseHuntWebsite/css/searchPage.css">
+
+</head>
+
+<body>
+
+    <!-- api search -->
+    <div class="container searchSec">
+
+        <form id="covidDataForm" class="searchSec__form" autocomplete="on">
+            <i class="bi bi-search"></i>
+            <input class="searchSec__input" id="searchBoxInput" type="text" placeholder="Search Tutorials">
+            <button class="searchSec__submitBtn" type="submit">Search</button>
+        </form>
+
+    </div>
+
+    <div class="container result__outerbox p-md-0">
+        <ul id="dataBlock" class="emptyBlock">
+        </ul>
+    </div>
+
+    <!-- navbar script -->
+    <script>
+
+        const body = document.querySelector("body");
+
+        (async () => {
+            const response = await fetch("navbar.html");
+            const navbar = await response.text();
+            body.insertAdjacentHTML('afterbegin', navbar);
+        })();
+    </script>
+
+    <!-- api script -->
+    <script src="/CourseHuntWebsite/js/api.js"></script>
+
+    <!-- results box script : Empty reaxn -->
+    <script>
+
+        const resultBox = document.querySelector("#dataBlock");
+
+        // creating a new mutation observer
+        const resultBoxObserver = new MutationObserver((mutationsList, resultBoxObserver) => {
+
+            // mutationsList is an array
+            (mutationsList.length === 0) ? resultBox.classList.add("emptyBlock") : resultBox.classList.remove("emptyBlock");
+        });
+
+        // resultBoxObserver observing resultBox
+        resultBoxObserver.observe(resultBox, { childList: true });
+
+    </script>
+
+</body>
+
+</html>
